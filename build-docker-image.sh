@@ -10,4 +10,4 @@ $(basename $readlink -f $0))
 EOM
 }
 
-exec docker build --build-arg http_proxy=$http_proxy --build-arg https_proxy=${https_proxy:-$http_proxy} --tag joluxer/build-env:centos7 $docker_dir
+exec docker build --build-arg http_proxy=$http_proxy --build-arg https_proxy=${https_proxy:-$http_proxy} --tag dynainstrumentsoss/build-env:centos7 $docker_dir
